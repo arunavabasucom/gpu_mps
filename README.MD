@@ -1,17 +1,27 @@
 ```bash
-(base) ➜  metal bash compare.sh
->> GPU
+
+>> 10 elements(CPU)
 Sine values: 0.9092974066734314
+CPU computation time: 0.00 seconds
+Sine of 2.0 radians (CPU): 0.9092974066734314
+GPU computation time: 0.00 seconds
+Sine of 2.0 radians (GPU): 0.9092974066734314
+The GPU is 0.02 times faster than the CPU.
 
-real    0m5.203s
-user    0m4.235s
-sys     0m0.423s
->> CPU
-Sine of 2.0 radians: 0.9092974066734314
+>> 10^3 elements(CPU)
+Sine values: 0.9092974066734314
+CPU computation time: 0.00 seconds
+Sine of 2.0 radians (CPU): 0.9092974066734314
+GPU computation time: 0.00 seconds
+Sine of 2.0 radians (GPU): 0.9092974066734314
+The GPU is 0.02 times faster than the CPU.
 
-real    0m15.217s
-user    0m13.332s
-sys     0m0.505s
+>> 10^6(GPU)
+Sine values: 0.9092974066734314
+CPU computation time: 0.89 seconds
+Sine of 2.0 radians (CPU): 0.9092974066734314
+GPU computation time: 0.04 seconds
+Sine of 2.0 radians (GPU): 0.9092974066734314
+The GPU is 24.64 times faster than the CPU.
 
->> 3x faster on GPU (10^6 numbers of sin calculations)
 ```
